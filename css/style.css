@@ -372,6 +372,30 @@ p.txt_exp {
     color: #8b8b8b;
 }
 
+.img_desc_habilidades {
+    position: relative;
+    right: 50%;
+    width: 180%;
+}
+
+.img_desc_habilidades img {
+    width: 100%;
+    animation: float 3s ease-in-out infinite;
+}
+
+@keyframes float {
+
+    0%,
+    100% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-10px);
+    }
+}
+
+
 .icons_habilidades_1 {
     display: flex;
     flex-direction: column;
@@ -381,6 +405,7 @@ p.txt_exp {
     position: relative;
     left: 5rem;
 }
+
 .icons_habilidades_2 {
     display: flex;
     flex-direction: column;
@@ -391,22 +416,36 @@ p.txt_exp {
     left: 5rem;
     top: 2rem;
 }
+
 .icon_habilidades i {
     font-size: 70px;
     color: #646262;
 }
-.icon_habilidades{
+
+.icon_habilidades {
+    cursor: pointer;
     display: flex;
     justify-content: center;
     flex-direction: column;
     align-items: center;
-    margin-bottom: 5px; /* Espaçamento entre os ícones */
-    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3); /* Sombras */
+    margin-bottom: 5px;
+    /* Espaçamento entre os ícones */
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+    /* Sombras */
     border-radius: 10px;
     padding: 2rem;
-    width: 70px;
-    height: 70px;
+    width: 100px;
+    height: 100px;
+    transition: all ease .5s;
+    border-bottom: 3px solid transparent;
+    border-right: 3px solid transparent;
 }
+
+.icon_habilidades:hover {
+    border-bottom: 3px solid var(--roxo);
+    border-right: 3px solid var(--roxo);
+}
+
 .collumn_1 {
     display: flex;
     gap: 3rem;
@@ -417,4 +456,205 @@ p.txt_exp {
     gap: 3rem;
 }
 
+.collumn_3 {
+    display: flex;
+    gap: 3rem;
+}
+
+.icon_habilidades .php {
+    color: #646262;
+    transition: color 0.5s;
+}
+
+.icon_habilidades:hover .php {
+    color: #777BB4;
+    transform: rotate(360deg);
+    transition: all ease .5s;
+}
+
+.icon_habilidades .fa-python {
+    color: #646464;
+    transition: .5s;
+}
+
+.icon_habilidades:hover .fa-python {
+    color: #3776AB;
+    transform: rotate(360deg);
+    transition: all ease .5s;
+}
+
+.icon_habilidades .fa-js {
+    color: #646464;
+    transition: .5s;
+}
+
+.icon_habilidades:hover .fa-js {
+    color: #F7DF1E;
+    transform: rotate(360deg);
+    transition: all ease .5s;
+}
+
+.icon_habilidades .fa-css3-alt {
+    color: #646464;
+    transition: .5s;
+}
+
+.icon_habilidades:hover .fa-css3-alt {
+    color: var(--colorCSS);
+    transform: rotate(360deg);
+    transition: all ease .5s;
+}
+
+.icon_habilidades .fa-html5 {
+    color: #646464;
+    transition: .5s;
+}
+
+.icon_habilidades:hover .fa-html5 {
+    color: var(--colorHTML);
+    transform: rotate(360deg);
+    transition: all ease .5s;
+}
+
+.icon_habilidades .fa-react {
+    color: #646464;
+    transition: .5s;
+}
+
+.icon_habilidades:hover .fa-react {
+    color: var(--colorReactNative);
+    transform: rotate(360deg);
+    transition: all ease .5s;
+}
+
 /*=================================habilidades=============================*/
+
+
+/*=================================certificados=============================*/
+.container_certificados {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding: 35px 12rem;
+    position: relative;
+    top: 30rem;
+    margin: 0 auto;
+}
+
+.container_certificados h1 {
+    text-align: center;
+    font-size: 40px;
+    color: var(--grey);
+    font-weight: bold;
+}
+
+.container_certificados h1 span {
+    color: var(--roxo);
+}
+
+.carousel_certificados {
+    position: relative;
+    top: 3rem;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    gap: 5rem;
+}
+
+.card_carousel.active {
+    display: flex;
+}
+
+.card_carousel {
+    display: none;
+    border: 2px solid transparent;
+    width: 40%;
+    padding: .2rem;
+    border-radius: 5px;
+    background-color: var(--grey);
+    flex-direction: column;
+}
+
+
+.card_carousel h5 {
+    font-size: 30px;
+    color: var(--branco);
+    text-align: center;
+}
+
+.card_carousel h5 span {
+    color: var(--roxo);
+}
+
+.itens_certificados {
+    position: relative;
+    top: -1.5rem;
+    text-align: center;
+}
+
+.itens_certificados p {
+    font-size: 15px;
+    font-weight: bold;
+    color: var(--branco);
+}
+
+.itens_certificados p span {
+    color: var(--roxo);
+    font-size: 15px;
+}
+
+.arrow_certificado {
+    background-color: var(--roxo);
+    border-radius: 5px;
+    padding: .5rem;
+    cursor: pointer;
+    width: 5%;
+    height: 35px;
+    display: flex;
+    align-items: center;
+}
+
+.arrow_certificado i {
+    color: var(--branco);
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+#text_certificado {
+    display: none;
+    text-align: center;
+    font-size: 10px;
+    white-space: nowrap;
+    position: relative;
+    right: 280%;
+}
+
+.arrow-left {
+    width: 30px;
+    height: 30px;
+    background-color: var(--roxo);
+    position: relative;
+    right: 5rem;
+    top: 10rem;
+    cursor: pointer;
+    clip-path: polygon(30% 0%, 100% 50%, 30% 100%, 0% 100%, 70% 50%, 0% 0%);
+    transform: scaleX(-1);
+    transition: all ease .5s;
+}
+
+
+.arrow-right {
+    width: 30px;
+    height: 30px;
+    background-color: var(--roxo);
+    position: relative;
+    left: 5rem;
+    top: 10rem;
+    cursor: pointer;
+    clip-path: polygon(30% 0%, 100% 50%, 30% 100%, 0% 100%, 70% 50%, 0% 0%);
+}
+
+
+/*=================================certificados=============================*/
