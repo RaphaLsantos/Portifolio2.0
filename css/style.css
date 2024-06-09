@@ -1,0 +1,420 @@
+* {
+    padding: 0;
+    text-decoration: none;
+    top: 0;
+}
+
+:root {
+    --branco: #fff;
+    --roxo: #5E17EB;
+    --grey: #111111;
+
+
+    --colorHTML: #E34F26;
+    --colorCSS: #1572B6;
+    --colorJS: #F7DF1E;
+    --colorPython: #3776AB;
+    --colorReactNative: #61DAFB;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+
+
+/*=================================NAVBAR=============================*/
+.navbar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 25px 20px;
+}
+
+.navbar-links a.active {
+    color: var(--roxo);
+    font-weight: bold;
+}
+
+.navbar-logo a {
+    color: black;
+    text-decoration: none;
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+.navbar-links {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+}
+
+.navbar-links li {
+    margin: 0 15px;
+}
+
+.navbar-links a {
+    color: black;
+    text-decoration: none;
+    font-size: 1em;
+}
+
+.navbar-links a:hover {
+    text-decoration: underline;
+}
+
+/*=================================NAVBAR=============================*/
+
+
+
+
+/*=================================HOME=============================*/
+.home {
+    display: flex;
+    justify-content: space-between;
+    padding: 35px 15rem;
+    position: relative;
+    top: 5rem;
+    margin: 0 auto;
+}
+
+.itens_home {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+}
+
+.itens_home h1 {
+    color: var(--roxo);
+    font-size: 40px;
+}
+
+.itens_home p {
+    color: var(--grey);
+    font-weight: bold;
+    position: relative;
+    top: -2rem;
+}
+
+.itens_home p span {
+    font-size: 25px;
+    color: var(--roxo);
+    font-weight: bold;
+}
+
+.itens_home .desc_home {
+    font-size: 20px;
+}
+
+.btn_home {
+    background-color: var(--roxo);
+    border: 2px solid transparent;
+    color: var(--branco);
+    border-radius: 10px;
+    padding: .7rem;
+    cursor: pointer;
+    position: relative;
+    top: -1.5rem;
+    font-weight: bold;
+}
+
+.container_img_home {
+    display: flex;
+    justify-content: space-between;
+}
+
+.icons_home {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    left: 4rem;
+    gap: .8rem;
+    top: 50%;
+    font-size: 22px;
+}
+
+.icons_home i {
+    color: var(--grey);
+    cursor: pointer;
+}
+
+.container_my_img {
+    width: 100%;
+    height: 100%;
+}
+
+.my_img {
+    width: 300px;
+    cursor: pointer;
+}
+
+/* Círculos flutuantes */
+.floating-circles {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
+
+.circle {
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    background-color: var(--roxo);
+    border-radius: 50%;
+    animation: float 5s infinite linear;
+    cursor: pointer;
+    opacity: 0.7;
+}
+
+.circle:nth-child(1) {
+    top: 10%;
+    left: 5%;
+    animation-duration: 8s;
+}
+
+.circle:nth-child(2) {
+    top: 60%;
+    left: 25%;
+    animation-duration: 6s;
+    background-color: var(--grey);
+    display: none;
+}
+
+.circle:nth-child(3) {
+    top: 13%;
+    left: 50%;
+    animation-duration: 7s;
+    background-color: var(--grey);
+    display: none;
+}
+
+.circle:nth-child(4) {
+    top: 80%;
+    left: 20%;
+    animation-duration: 9s;
+    display: none;
+}
+
+.circle:nth-child(5) {
+    top: 30%;
+    left: 90%;
+    background-color: var(--grey);
+    animation-duration: 10s;
+}
+
+@keyframes float {
+    0% {
+        transform: translateY(0) translateX(0);
+    }
+
+    50% {
+        transform: translateY(-20px) translateX(20px);
+    }
+
+    100% {
+        transform: translateY(0) translateX(0);
+    }
+}
+
+/* Círculos flutuantes */
+/*=================================HOME=============================*/
+
+
+/*=================================sobremim=============================*/
+.container_sobre_mim {
+    background-color: #222121;
+    border-radius: 10px;
+    width: 90%;
+    height: 600px;
+    display: flex;
+    margin: 0 auto;
+    position: relative;
+    top: 22rem;
+    flex-direction: column;
+    margin-bottom: 5rem;
+}
+
+.nav_sobre {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.nav_sobre h4 {
+    color: var(--branco);
+    font-weight: 100;
+    font-size: 30px;
+    position: relative;
+    left: 2.5rem;
+}
+
+.nav_sobre h4 span {
+    color: var(--roxo);
+    font-weight: bold;
+    font-size: 40px;
+}
+
+.icon {
+    border: 1px solid var(--branco);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    border-radius: 10px;
+    width: 140px;
+    text-align: center;
+    height: 22px;
+    position: relative;
+    left: 50rem;
+    padding: .5rem;
+}
+
+.icon i {
+    color: var(--branco);
+}
+
+.icon p {
+    color: var(--roxo);
+    position: relative;
+    left: 1rem;
+    font-weight: 300;
+}
+
+.itens_sobre_mim {
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+    padding: 35px 10rem;
+    gap: 5rem;
+    position: relative;
+    top: 1rem;
+}
+
+.txt_desc {
+    color: #8b8b8b;
+    width: 400px;
+}
+
+.experiencia {
+    display: flex;
+    flex-direction: row;
+    gap: 2rem;
+}
+
+.experiencia .exp {
+    text-align: center;
+}
+
+.exp p {
+    color: var(--branco);
+    font-weight: bold;
+}
+
+p.txt_exp {
+    font-weight: 100;
+    color: #8b8b8b;
+}
+
+.icons_sobre_mim {
+    display: flex;
+    position: relative;
+    top: 4rem;
+    gap: 1rem;
+}
+
+.icons_sobre_mim i {
+    background-color: var(--roxo);
+    border-radius: 50%;
+    padding: .5rem;
+    cursor: pointer;
+    color: var(--branco);
+    border: 1px solid var(--branco);
+    transition: all ease .5s;
+}
+
+.icons_sobre_mim i:hover {
+    opacity: 0.5;
+}
+
+/*=================================sobremim=============================*/
+
+
+/*=================================habilidades=============================*/
+.habilidades {
+    display: flex;
+    justify-content: space-between;
+    padding: 35px 12rem;
+    position: relative;
+    top: 30rem;
+    margin: 0 auto;
+}
+
+.desc_habilidades {
+    display: flex;
+    text-align: start;
+    flex-direction: column;
+}
+
+.desc_habilidades h1 {
+    font-size: 40px;
+}
+
+.desc_habilidades h1 span {
+    font-weight: bold;
+    color: var(--roxo);
+}
+
+.desc_habilidades p {
+    color: #8b8b8b;
+}
+
+.icons_habilidades_1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    position: relative;
+    left: 5rem;
+}
+.icons_habilidades_2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    position: relative;
+    left: 5rem;
+    top: 2rem;
+}
+.icon_habilidades i {
+    font-size: 70px;
+    color: #646262;
+}
+.icon_habilidades{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 5px; /* Espaçamento entre os ícones */
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3); /* Sombras */
+    border-radius: 10px;
+    padding: 2rem;
+    width: 70px;
+    height: 70px;
+}
+.collumn_1 {
+    display: flex;
+    gap: 3rem;
+}
+
+.collumn_2 {
+    display: flex;
+    gap: 3rem;
+}
+
+/*=================================habilidades=============================*/

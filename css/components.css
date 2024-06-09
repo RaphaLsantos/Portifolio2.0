@@ -1,0 +1,66 @@
+* {
+    padding: 0;
+    text-decoration: none;
+    top: 0;
+}
+
+:root {
+    --branco: #fff;
+    --roxo: #5E17EB;
+    --grey: #111111;
+
+
+    --colorHTML: #E34F26;
+    --colorCSS: #1572B6;
+    --colorJS: #F7DF1E;
+    --colorPython: #3776AB;
+    --colorReactNative: #61DAFB;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+/*inicio arrow sobre*/
+.container_arrow_sobre{
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+    position: relative;
+    top: 10rem;
+}
+.container_arrow_sobre i{
+    cursor: pointer;
+    font-size: 20px;
+    transition: all ease .5s;
+}
+.container_arrow_sobre i:hover{
+    color: var(--roxo);
+    font-size: 25px;
+    transform: rotate(180deg);
+}
+/*final arrow sobre*/
+
+
+/*inicio arrow habilidades*/
+.container_arrow_habilidades{
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+    position: relative;
+    top: 20rem;
+}
+.container_arrow_habilidades i{
+    cursor: pointer;
+    font-size: 20px;
+    transition: all ease .5s;
+}
+.container_arrow_habilidades i:hover{
+    color: var(--roxo);
+    font-size: 25px;
+    transform: rotate(180deg);
+}
+/*final arrow habilidades*/
+
+
