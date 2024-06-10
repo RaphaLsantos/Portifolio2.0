@@ -26,6 +26,7 @@
     </nav>
     <!--navBar final-->
 
+
     <!--home inicio-->
     <main class="home">
         <div class="itens_home">
@@ -48,6 +49,7 @@
     </main>
     <!--home final-->
 
+
     <!--efeito circulos-->
     <div class="floating-circles">
         <div class="circle"></div>
@@ -57,6 +59,7 @@
         <div class="circle"></div>
     </div>
     <!--efeito circulos-->
+
 
     <!--arrow sobre-->
     <div class="container_arrow_sobre">
@@ -114,11 +117,13 @@
     </div>
     <!--final sobre-->
 
+
     <!--arrow habilidades-->
     <div class="container_arrow_habilidades">
         <i class="fa-solid fa-arrow-up"></i>
     </div>
     <!--arrow habilidades-->
+
 
     <!--inicio habilidades-->
     <main class="habilidades">
@@ -170,85 +175,184 @@
     </main>
     <!--final habilidades-->
 
+
     <!--arrow habilidades-->
     <div class="container_arrow_certificados">
         <i class="fa-solid fa-arrow-up"></i>
     </div>
     <!--arrow habilidades-->
 
+
     <!--certificados inicio-->
     <div class="container_certificados">
         <h1>Meus <span>certificados</span></h1>
         <div class="carousel_certificados">
-
             <div class="container_left" id="arrow_left">
-                <div class="arrow-left" ></div>
+                <div class="arrow-left"></div>
             </div>
-
-            <div class="card_carousel active">
+            <div class="card_carousel">
                 <h5>Desenvolvimento<br>de <span>Sistemas</span></h5>
                 <div class="itens_certificados">
                     <p class="intituicao"><span>Instituição</span>: Etec (Técnico)</p>
-                    <p class="tempo"><span>Duracao</span>: 1 ano e 5 meses</p>
-                    <p class="ano"><span>Conclusao</span>: 2023</p>
+                    <p class="tempo"><span>Duração</span>: 1 ano e 5 meses</p>
+                    <p class="ano"><span>Conclusão</span>: 2023</p>
                 </div>
-                <div class="arrow_certificado" id="arrow_animation">
-                    <i class="fa-solid fa-arrow-right" id="arrow_certifiction">
-                        <p id="text_certificado">Clique aqui</p>
+                <div class="arrow_certificado">
+                    <i class="fa-solid fa-arrow-right arrow_certifiction">
+                        <p class="text_certificado" onclick="abrirModal('img/')">Clique aqui</p>
                     </i>
                 </div>
             </div>
-
-            <div class="card_carousel active">
-                <h5>Desenvolvimento<br>de <span>Sistemas</span></h5>
-                <div class="itens_certificados">
-                    <p class="intituicao"><span>Instituição</span>: Etec (Técnico)</p>
-                    <p class="tempo"><span>Duracao</span>: 1 ano e 5 meses</p>
-                    <p class="ano"><span>Conclusao</span>: 2023</p>
-                </div>
-                <div class="arrow_certificado" id="arrow_animation">
-                    <i class="fa-solid fa-arrow-right" id="arrow_certifiction">
-                        <p id="text_certificado">Clique aqui</p>
-                    </i>
-                </div>
-            </div>
-
             <div class="card_carousel">
-                <h5>Desenvolvimento<br>de <span></span></h5>
+                <h5>Curso<br><span>Python</span></h5>
                 <div class="itens_certificados">
-                    <p class="intituicao"><span>Instituição</span>: Etec (Técnico)</p>
-                    <p class="tempo"><span>Duracao</span>: 1 ano e 5 meses</p>
-                    <p class="ano"><span>Conclusao</span>: 2023</p>
+                    <p class="intituicao"><span>Instituição</span>: Curso em Vídeo</p>
+                    <p class="tempo"><span>Duração</span>: 40 horas</p>
+                    <p class="ano"><span>Conclusão</span>: 2023</p>
                 </div>
-                <div class="arrow_certificado" id="arrow_animation">
-                    <i class="fa-solid fa-arrow-right" id="arrow_certifiction">
-                        <p id="text_certificado">Clique aqui</p>
+                <div class="arrow_certificado">
+                    <i class="fa-solid fa-arrow-right arrow_certifiction">
+                        <p class="text_certificado" onclick="abrirModal('img/certificados/py.pdf')">Clique aqui</p>
                     </i>
                 </div>
             </div>
-
             <div class="card_carousel">
-                <h5>Desenvolvimento<br>de <span></span></h5>
+                <h5>Curso<br><span>JavaScript</span></h5>
                 <div class="itens_certificados">
-                    <p class="intituicao"><span>Instituição</span>: Etec (Técnico)</p>
-                    <p class="tempo"><span>Duracao</span>: 1 ano e 5 meses</p>
-                    <p class="ano"><span>Conclusao</span>: 2023</p>
+                    <p class="intituicao"><span>Instituição</span>: Curso em Vídeo</p>
+                    <p class="tempo"><span>Duração</span>: 40 horas</p>
+                    <p class="ano"><span>Conclusão</span>: 2024</p>
                 </div>
-                <div class="arrow_certificado" id="arrow_animation">
-                    <i class="fa-solid fa-arrow-right" id="arrow_certifiction">
-                        <p id="text_certificado">Clique aqui</p>
+                <div class="arrow_certificado">
+                    <i class="fa-solid fa-arrow-right arrow_certifiction">
+                        <p class="text_certificado" onclick="abrirModal('img/certificados/js.pdf')">Clique aqui</p>
                     </i>
                 </div>
             </div>
-
-            <div class="container_right"  id="arrow_right">
+            <div class="card_carousel">
+                <h5>Curso<br><span>GitHub</span></h5>
+                <div class="itens_certificados">
+                    <p class="intituicao"><span>Instituição</span>: Curso em Vídeo</p>
+                    <p class="tempo"><span>Duração</span>: 20 Horas</p>
+                    <p class="ano"><span>Conclusão</span>: 2024</p>
+                </div>
+                <div class="arrow_certificado">
+                    <i class="fa-solid fa-arrow-right arrow_certifiction">
+                        <p class="text_certificado" onclick="abrirModal('caminho/para/o/pdf4.pdf')">Clique aqui</p>
+                    </i>
+                </div>
+            </div>
+            <div class="container_right" id="arrow_right">
                 <div class="arrow-right"></div>
             </div>
-
-
         </div>
     </div>
     <!--certificados final-->
+
+
+
+    <!--arrow habilidades-->
+    <div class="container_arrow_projetos">
+        <i class="fa-solid fa-arrow-up"></i>
+    </div>
+    <!--arrow habilidades-->
+
+
+    <!--area projetos inicio-->
+    <div class="container_prj">
+        <h1>Meu <span>Portfólio</span></h1>
+        <p>Veja meus trabalhos</p>
+
+        <div class="carousel_prj" id="slider">
+            <input type="radio" name="slider" id="slide1" checked>
+            <input type="radio" name="slider" id="slide2">
+            <input type="radio" name="slider" id="slide3">
+            <input type="radio" name="slider" id="slide4">
+            <div id="slides">
+                <div class="overflow">
+                    <div class="inner">
+                        <div class="card_prj slide slide_1">
+                            <div class="div_img_prj serMae">
+                                <img src="img/projects/cards_prj/1.png" alt="">
+                            </div>
+                            <div class="itens_prj">
+                                <p class="txt_prj">lorem title</p>
+                                <p class="info">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Recusandae,
+                                    cumque!</p>
+                                <button class="btn_prj">Ver projeto<i class="fa-brands fa-github-alt"></i></button>
+                            </div>
+                        </div>
+
+                        <div class="card_prj slide slide_2">
+                            <div class="div_img_prj buyCars">
+                                <img src="img/projects/cards_prj/2.png" style="position: relative; top:3rem" alt="">
+                            </div>
+                            <div class="itens_prj">
+                                <p class="txt_prj">lorem title</p>
+                                <p class="info">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Recusandae,
+                                    cumque!</p>
+                                <button class="btn_prj">Ver projeto<i class="fa-brands fa-github-alt"></i></button>
+                            </div>
+                        </div>
+
+                        <div class="card_prj slide slide_3">
+                            <div class="div_img_prj">
+                                <img src="img/projects/cards_prj/nuts.png" style="width: 100%; height:100%" alt="">
+                            </div>
+                            <div class="itens_prj">
+                                <p class="txt_prj">lorem title</p>
+                                <p class="info">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Recusandae,
+                                    cumque!</p>
+                                <button class="btn_prj">Ver projeto<i class="fa-brands fa-github-alt"></i></button>
+                            </div>
+                        </div>
+
+                        <div class="card_prj slide slide_4">
+                            <div class="div_img_prj rpsEsports">
+                                <img src="img/projects/cards_prj/4.png" style="position: relative; top:3.5rem" alt="">
+                            </div>
+                            <div class="itens_prj">
+                                <p class="txt_prj">lorem title</p>
+                                <p class="info">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Recusandae,
+                                    cumque!</p>
+                                <button class="btn_prj">Ver projeto<i class="fa-brands fa-github-alt"></i></button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div id="controls">
+                    <label for="slide1" class="prev"><i class="fas fa-arrow-left"></i></label>
+                    <label for="slide2" class="next"><i class="fas fa-arrow-right"></i></label>
+                </div>
+                <div id="bullets">
+                    <label for="slide1"></label>
+                    <label for="slide2"></label>
+                    <label for="slide3"></label>
+                    <label for="slide4"></label>
+                </div>
+            </div>
+        </div>
+
+
+    </div>
+    <!--area projetos final-->
+
+
+
+
+
+
+
+
+
+    <!--modal certificados-->
+    <div id="myModal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="fecharModal()">&times;</span>
+            <iframe id="pdfFrame" src="" width="100%" height="600px"></iframe>
+        </div>
+    </div>
+    <!--modal certificados-->
 
     <script src="./js/js.js"></script>
 </body>
