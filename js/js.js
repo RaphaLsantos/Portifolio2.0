@@ -105,3 +105,35 @@ document.getElementById('arrow_right').addEventListener('click', function() {
 // Inicialização
 showCard(currentIndex);
 /*carousel inicio certificados*/
+
+
+
+//efeito voltar ao inicio arrow
+document.addEventListener('DOMContentLoaded', function(){
+    const sobre = document.getElementById('aparecerArrow');
+    const arrowTopo = document.querySelector('.container_arrow_topo');
+    const sobreOffset = sobre.offsetTop;
+    const showArrowOffset = 300; // Ajuste conforme necessário
+
+    function checkScroll() {
+        if (window.pageYOffset + window.innerHeight > sobreOffset - showArrowOffset) {
+            arrowTopo.classList.add('show');
+        } else {
+            arrowTopo.classList.remove('show');
+        }
+    }
+
+    function scrollToTop() {
+        window.scrollTo({
+            top: 0,
+            behavior: 'smooth'
+        });
+    }
+
+    window.addEventListener('scroll', checkScroll);
+    arrowTopo.addEventListener('click', scrollToTop);
+
+    checkScroll(); 
+});
+
+//efeito voltar ao inicio arrow//

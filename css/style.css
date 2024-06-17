@@ -676,6 +676,8 @@ p.txt_exp {
     font-size: 40px;
     color: var(--grey);
     font-weight: bold;
+    position: relative;
+    top: 2rem;
 }
 
 .container_prj h1 span {
@@ -687,6 +689,8 @@ p.txt_exp {
     font-weight: bold;
     position: relative;
     top: -2rem;
+    position: relative;
+    top: 0rem;
 }
 
 .carousel_prj {
@@ -694,7 +698,7 @@ p.txt_exp {
     justify-content: center;
     flex-direction: row;
     position: relative;
-    top: 5rem;
+    top: 3rem;
 }
 
 .card_prj {
@@ -716,9 +720,10 @@ p.txt_exp {
     border-radius: 8px;
 }
 
-.div_img_prj.serMae{
+.div_img_prj.serMae {
     background-color: var(--roxo);
 }
+
 .div_img_prj.buyCars {
     background-color: var(--grey);
 }
@@ -882,3 +887,110 @@ p.txt_exp {
 #slide4:checked~#bullets label:nth-child(4) {
     background: var(--grey);
 }
+
+/*=================================projetos=============================*/
+
+
+/*=================================contato=============================*/
+.container_ctt {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding: 35px 12rem;
+    position: relative;
+    top: 70rem;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.container_ctt h1 {
+    text-align: center;
+    font-size: 40px;
+    color: var(--roxo);
+    font-weight: bold;
+}
+
+.container_ctt .txt_ctt {
+    font-weight: bold;
+    color: #646262;
+    position: relative;
+    top: -2rem;
+}
+
+.icons_ctt_container {
+    display: flex;
+    justify-content: center;
+    gap: 7rem;
+    position: relative;
+    top: 4rem;
+    cursor: pointer;
+}
+
+.icons_ctt_container .icons i {
+    font-size: 35px;
+    color: var(--roxo);
+    transition: all ease .5s;
+    transition: transform 0.3s ease;
+}
+
+.icons_ctt_container .icons i:hover,
+.icons_ctt_container .icons p:hover {
+    transform: translateY(-10px);
+}
+
+.icons_ctt_container .icons p {
+    font-weight: bold;
+    color: var(--grey);
+    transition: transform 0.3s ease;
+}
+
+
+/*footer inicio*/
+footer{
+    display: flex;
+    justify-content: center;
+    padding: 35px 12rem;
+    position: relative;
+    top: 80rem;
+    margin: 0 auto;
+    text-align: center;
+    flex-direction: column;
+    background-color: var(--grey);
+    height: 300px;
+}
+.icons_footer{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap:3rem;
+}
+.icons_footer .icons i{
+    padding: 1rem;
+    background-color: var(--branco);
+    color: var(--roxo);
+    font-size:25px;
+    border-radius: 100%;
+    cursor: pointer;
+}
+footer .links{
+    display: flex;
+    flex-direction: row;
+    gap: 4rem;
+    justify-content: center;
+    position: relative;
+    top: 3rem;
+}
+.links p{
+    font-weight: bold;
+    color: #646262;
+    cursor: pointer;
+}
+
+.copyright{
+    position: relative;
+    color: var(--roxo);
+    font-weight: bold;
+    top: 4.5rem;
+}
+/*footer final*/
+/*=================================contato=============================*/

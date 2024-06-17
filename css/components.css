@@ -83,6 +83,26 @@ body {
 }
 /*final arrow projetos*/
 
+/*inicio arrow ctt*/
+.container_arrow_contato{
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+    position: relative;
+    top: 60rem;
+}
+.container_arrow_contato i{
+    cursor: pointer;
+    font-size: 20px;
+    transition: all ease .5s;
+}
+.container_arrow_contato i:hover{
+    color: var(--roxo);
+    font-size: 25px;
+    transform: rotate(180deg);
+}
+/*inicio arrow ctt*/
+
 
 /*inicio modal certificados*/
 .modal {
@@ -121,3 +141,34 @@ body {
 /*final modal certificados*/
 
 
+/*arrow voltar ao topo*/
+.container_arrow_topo {
+    opacity: 0;
+    padding: 1rem;
+    background-color: var(--roxo);
+    border-radius: 5px;
+    width: 10px;
+    height: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    bottom: 20px;
+    top: 85%;
+    right: 20px;
+    transition: opacity 0.5s ease;
+    cursor: pointer;
+}
+.container_arrow_topo.show {
+    opacity: 1;
+}
+.container_arrow_topo i {
+    color: var(--branco);
+    font-size: 20px;
+    transition: all ease .5s;
+    transition: transform 0.3s ease;
+}
+.container_arrow_topo i:hover{
+    transform: translateY(-7px);
+}
+/*arrow voltar ao topo*/
